@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9FBC79;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.medcure.app.ProfilController">
+   <children>
+      <Pane layoutX="39.0" layoutY="33.0" prefHeight="319.0" prefWidth="249.0" style="-fx-background-color: #558669; -fx-background-radius: 10%;">
+         <children>
+            <Label fx:id="labelProfilPhoto" alignment="CENTER" layoutX="34.0" layoutY="45.0" prefHeight="40.0" prefWidth="186.0" text="Profil Photo" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="33.0" />
+               </font>
+            </Label>
+            <Pane layoutX="50.0" layoutY="98.0">
+               <children>
+                  <HBox prefHeight="154.0" prefWidth="147.0" style="-fx-background-radius: 10%;">
+                     <children>
+                        <ImageView fx:id="fotoprofil" fitHeight="189.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@default_img.png" />
+                           </image></ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Line endX="17.4000244140625" endY="25.60003662109375" layoutX="473.0" layoutY="364.0" startX="17.4000244140625" startY="-24.0" stroke="WHITE" />
+      <Pane layoutX="312.0" layoutY="71.0" opacity="0.55" prefHeight="254.0" prefWidth="255.0" style="-fx-background-radius: 10%; -fx-background-color: #558669;">
+         <children>
+            <Text fill="WHITE" layoutX="26.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Profil" wrappingWidth="201.5830783843994">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Label layoutX="17.0" layoutY="60.0" text="Nama" />
+            <Label layoutX="15.0" layoutY="101.0" text="email" />
+            <Label layoutX="16.0" layoutY="140.0" text="password" />
+            <Text fx:id="lblusername" fill="WHITE" layoutX="17.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: left;" wrappingWidth="203.9831027984619" />
+            <Text fx:id="txtemail" fill="WHITE" layoutX="14.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: left;" wrappingWidth="201.5830783843994" />
+            <Text fx:id="txtpass" fill="WHITE" layoutX="17.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: left;" wrappingWidth="201.5830783843994" />
+            <Line endX="221.79998779296875" endY="-23.0" layoutX="17.0" layoutY="101.0" startY="-23.0" stroke="WHITE" />
+            <Line endX="227.5999755859375" endY="-23.0" layoutX="14.0" layoutY="141.0" startY="-23.0" stroke="WHITE" />
+            <Line endX="225.79998779296875" endY="-23.0" layoutX="15.0" layoutY="182.0" startY="-23.0" stroke="WHITE" />
+            <Separator layoutX="28.0" layoutY="34.0" prefHeight="18.0" prefWidth="200.0" />
+            <Hyperlink fx:id="editProfileLink" layoutX="99.0" layoutY="216.0" onAction="#handleEditProfileLink" text="Edit Profil" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Button fx:id="btnhapusakun" layoutX="502.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleDeleteAccount" prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: #644A8E; -fx-background-radius: 10%;" text="hapus akun" textFill="WHITE" />
+      <Button fx:id="logoutid" layoutX="398.0" layoutY="347.0" mnemonicParsing="false" onAction="#logout" prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: #644A8E; -fx-background-radius: 10%;" text="logout" textFill="WHITE" />
+   </children>
+</AnchorPane>

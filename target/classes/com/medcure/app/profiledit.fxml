@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9FBC79;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.medcure.app.ProfileEditController">
+   <children>
+      <Pane layoutX="39.0" layoutY="33.0" prefHeight="319.0" prefWidth="249.0" style="-fx-background-color: #558669; -fx-background-radius: 10%;">
+         <children>
+            <Label fx:id="labelProfilPhoto" alignment="CENTER" layoutX="30.0" layoutY="52.0" prefHeight="40.0" prefWidth="186.0" text="Profil Photo" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="33.0" />
+               </font>
+            </Label>
+            <Pane layoutX="50.0" layoutY="98.0">
+               <children>
+                  <HBox prefHeight="154.0" prefWidth="147.0" style="-fx-background-radius: 10%;">
+                     <children>
+                        <ImageView fx:id="fotoprofiledit" fitHeight="150.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <Button fx:id="btnganti" layoutX="52.0" layoutY="265.0" mnemonicParsing="false" onAction="#chooseProfilePicture" prefHeight="40.0" prefWidth="149.0" style="-fx-background-color: #644A8E; -fx-background-radius: 10%;" text="ganti foto profil" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Line endX="17.4000244140625" endY="25.60003662109375" layoutX="473.0" layoutY="364.0" startX="17.4000244140625" startY="-24.0" stroke="WHITE" />
+      <Pane layoutX="312.0" layoutY="71.0" opacity="0.55" prefHeight="210.0" prefWidth="255.0" style="-fx-background-radius: 10%; -fx-background-color: #558669;">
+         <children>
+            <Text fill="WHITE" layoutX="28.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Edit-Profil" wrappingWidth="186.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Label layoutX="17.0" layoutY="60.0" text="Nama" />
+            <Label layoutX="15.0" layoutY="101.0" text="email" />
+            <Label layoutX="16.0" layoutY="140.0" text="password" />
+            <Separator layoutX="28.0" layoutY="34.0" prefHeight="18.0" prefWidth="200.0" />
+            <TextField fx:id="usernamefield" layoutX="83.0" layoutY="56.0" promptText="username" />
+            <TextField fx:id="passwordfield" layoutX="83.0" layoutY="136.0" promptText="password" />
+            <TextField fx:id="emailfield" layoutX="83.0" layoutY="97.0" promptText="ex@.gmail.com" />
+         </children>
+      </Pane>
+      <Button fx:id="batalbtn" layoutX="502.0" layoutY="347.0" mnemonicParsing="false" onAction="#cancel" prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: #644A8E; -fx-background-radius: 10%;" text="batal" textFill="WHITE" />
+      <Button fx:id="saveid" layoutX="398.0" layoutY="347.0" mnemonicParsing="false" onAction="#save" prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: #644A8E; -fx-background-radius: 10%;" text="save" textFill="WHITE" />
+   </children>
+</AnchorPane>

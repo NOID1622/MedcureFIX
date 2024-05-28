@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.medcure.app.DetailController">
+   <children>
+      <ImageView fitHeight="713.0" fitWidth="922.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@detailobat.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="FotoObat" fitHeight="286.0" fitWidth="396.0" layoutX="72.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@default_img.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="NamaObat" fill="WHITE" layoutX="506.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nama obat" wrappingWidth="232.51464843749994">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Label layoutX="506.0" layoutY="188.0" prefHeight="23.0" prefWidth="113.0" text="Komposisi" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="KomposisiObat" layoutX="506.0" layoutY="219.0" prefHeight="122.0" prefWidth="370.0" />
+      <Label layoutX="506.0" layoutY="348.0" prefHeight="23.0" prefWidth="113.0" text="Dosis" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="443.0" prefHeight="30.0" prefWidth="298.0" text="cara penggunaan" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="CaraPenggunaan" layoutX="328.0" layoutY="473.0" prefHeight="220.0" prefWidth="310.0" />
+      <Label layoutX="700.0" layoutY="348.0" prefHeight="30.0" prefWidth="187.0" text="Efek samping" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="DosisObat" layoutX="506.0" layoutY="378.0" prefHeight="50.0" prefWidth="187.0" />
+      <TextArea fx:id="EfekSamping" layoutX="700.0" layoutY="378.0" prefHeight="50.0" prefWidth="177.0" />
+      <Label fx:id="Produsen" layoutX="659.0" layoutY="605.0" prefHeight="30.0" prefWidth="233.0" text="produsen" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Harga" layoutX="659.0" layoutY="636.0" prefHeight="30.0" prefWidth="233.0" text="harga" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="659.0" layoutY="473.0" prefHeight="30.0" prefWidth="233.0" text="exp date" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="kadaluarsa" layoutX="659.0" layoutY="497.0" prefHeight="30.0" prefWidth="233.0" text="exp date" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

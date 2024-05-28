@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.medcure.app.AdminController">
+   <children>
+      <ImageView fitHeight="713.0" fitWidth="922.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@admin.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabledataobat" layoutX="256.0" layoutY="332.0" prefHeight="268.0" prefWidth="631.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="28.000000774860382" text="no" />
+            <TableColumn fx:id="namaobat" prefWidth="106.39999008178711" text="Nama obat" />
+            <TableColumn fx:id="komposisi" prefWidth="81.5999755859375" text="Komposisi" />
+            <TableColumn fx:id="dosis" prefWidth="76.00001525878906" text="Dosis" />
+            <TableColumn fx:id="caraPenggunaan" prefWidth="137.5999755859375" text="Cara Penggunaan" />
+            <TableColumn fx:id="efekSamping" prefWidth="118.4000244140625" text="Efek samping" />
+            <TableColumn fx:id="produsen" prefWidth="94.39990234375" text="Produsen" />
+            <TableColumn fx:id="harga" prefWidth="100.0001220703125" text="Harga" />
+            <TableColumn fx:id="tglKadaluarsa" prefWidth="173.60009765625" text="tgl_kadaluarsa" />
+         </columns>
+      </TableView>
+      <GridPane layoutX="35.0" layoutY="112.0" prefHeight="220.0" prefWidth="441.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.0" minWidth="10.0" prefWidth="198.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="475.0" minWidth="10.0" prefWidth="402.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="34.0" minHeight="7.200003051757811" prefHeight="24.800009155273436" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="73.5999969482422" minHeight="10.0" prefHeight="55.99999084472656" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="68.79998168945312" minHeight="10.0" prefHeight="68.79998168945312" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="43.20001831054688" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Komposisi" textFill="WHITE" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Dosis" textFill="WHITE" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="158.0" text="Cara Penggunaan" textFill="WHITE" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="fieldCaraPengunaan" prefHeight="26.0" prefWidth="202.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="fieldNamaObat" prefHeight="0.0" prefWidth="297.0" GridPane.columnIndex="1" />
+            <TextArea fx:id="fieldKomposisi" prefHeight="39.0" prefWidth="278.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="fieldDosis" prefHeight="44.0" prefWidth="322.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Nama Obat" textFill="WHITE">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="477.0" layoutY="112.0" prefHeight="209.0" prefWidth="395.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.0" minWidth="10.0" prefWidth="198.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="475.0" minWidth="10.0" prefWidth="402.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="55.20000305175781" minHeight="10.0" prefHeight="55.20000305175781" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="25.599996948242186" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Efek Samping" textFill="WHITE">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Produsen" textFill="WHITE" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Tgl_kadaluarsa" textFill="WHITE" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="fieldProdusen" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="fieldHarga" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="Harga" textFill="WHITE" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <DatePicker fx:id="fieldKadaluarsa" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextArea fx:id="fieldEfekSamping" prefHeight="50.0" prefWidth="300.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnsave" layoutX="273.0" layoutY="619.0" mnemonicParsing="false" onAction="#handleOnSave" prefHeight="39.0" prefWidth="78.0" text="save" />
+      <Button fx:id="btnfotoobat" layoutX="82.0" layoutY="626.0" mnemonicParsing="false" onAction="#handleFotoObat" text="Edit Foto Obat" />
+      <ImageView fx:id="fotoObat" fitHeight="251.0" fitWidth="191.0" layoutX="35.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@default_img.png" />
+         </image>
+      </ImageView>
+      <StackPane layoutX="653.0" layoutY="607.0" prefHeight="63.0" prefWidth="233.0" styleClass="highlight-rectangle">
+         <padding>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Button fx:id="logout" mnemonicParsing="false" onAction="#logout" prefHeight="39.0" prefWidth="117.0" text="logout from admin" />
+         </children>
+      </StackPane>
+      <Button fx:id="addData" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#onTambahObat" prefHeight="39.0" prefWidth="72.0" text="add Data" />
+      <Label layoutX="77.0" layoutY="338.0" prefHeight="18.0" prefWidth="102.0" text="Preview gambar" textFill="WHITE" underline="true" />
+      <TextField fx:id="searchBox" layoutX="93.0" layoutY="11.0" prefHeight="39.0" prefWidth="175.0" promptText="pencarian obat" styleClass="transparent" />
+      <Button layoutX="236.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleOnReset" prefHeight="39.0" prefWidth="32.0" style="-fx-background-color: transparent;" text="x" textFill="#69085d">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="357.0" layoutY="619.0" mnemonicParsing="false" onAction="#handleOnDelete" prefHeight="39.0" prefWidth="78.0" text="hapus" />
+      <Text fill="WHITE" layoutX="752.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello..." wrappingWidth="93.60000000000002">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

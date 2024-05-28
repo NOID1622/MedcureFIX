@@ -1,0 +1,4 @@
+--patch-module
+com.medcure.app=_
+--add-reads
+com.medcure.app=ALL-UNNAMED
